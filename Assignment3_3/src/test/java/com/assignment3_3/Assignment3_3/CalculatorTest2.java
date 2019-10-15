@@ -6,27 +6,26 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CalculatorTest {
+public class CalculatorTest2 {
 	
 	
-	Calculator testObj;
-	long tax, product_price  ;
-	double tax_rate,expected, actual;
+	Calculator2 testObj;
+	long total_price, nums, unitPrice, expected, actual;
 	
 
 	@Before
 	public void setUp() throws Exception {
-		product_price=200;
-		tax_rate=0.15;
-		testObj = new Calculator();
-		expected = 200*0.15;
-	    actual = testObj.product(product_price,tax_rate);
+		nums=100;
+		unitPrice=3;
+		testObj = new Calculator2();
+		expected = 100*3;
+	    actual = testObj.product(nums,unitPrice);
 		
 	}
 
 	@Test
 	public void test() {
-		assertEquals(expected, actual, 0.01);
+		assertEquals(expected, actual);
 
 	}
 	

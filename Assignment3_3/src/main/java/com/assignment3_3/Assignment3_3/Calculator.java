@@ -2,14 +2,10 @@ package com.assignment3_3.Assignment3_3;
 
 public class Calculator {
 
-//	public long product(int i, int j, int k, int l) {
-	public long product(long...ls) {
-		long result = ls[0];
-		for(int a=1; a<ls.length ; a++) {
-			result*=ls[a];
-		}
+	public double product(double product_price ,double tax_rate) {
 		
-		return result;
+		
+		return product_price*tax_rate;
 	}
 
 }
